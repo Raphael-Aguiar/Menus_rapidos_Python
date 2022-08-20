@@ -81,7 +81,7 @@ text_menu_moodle =
 (
     Digite o número correspondente ao serviço desejado:
 
-            1. PSP (MPS005) - Moodle
+          1. PSP (MPS005) - Moodle
 		  2. PSP (MPS005) - Diário de Classe
 		  3. Didática (MPS906) - Moodle
 		  4. Didática (MPS906) - Diário de Classe
