@@ -8,12 +8,11 @@ def main_trigger(AHK!!!!!!!): A FUNÇÃO TERÁ UM PARÂMETRO CONFORME O ATALHO!
     # Enviar comando + argumento
 """
 
-def selector():
+def instanciator():
 
-    # Instancia a classe escolhida de menu conforme o argumento repassado.
-    # Exibe o menu no terminal (print)
-    # Pergunta a opção de site/aplicativo e recebe o input
-    # Executa os métodos padrão e adicionais da classe a partir da escolha
+    # Instancia a classe escolhida de menu conforme o argumento repassado
+    # ao se iniciar o programa
+
     pass
 
 def closing():
@@ -23,12 +22,17 @@ def closing():
 
 def main():
 
-    selector()
-    subclasse.trigger_site()
-    # OU
+    instanciator()
+
+    subclasse.menu()
+
+    subclasse.trigger_site()  # OU
     subclasse.trigger_app()
+
     subclasse.metodos_finais()
+
     closing()
+
     pass
 
 main()

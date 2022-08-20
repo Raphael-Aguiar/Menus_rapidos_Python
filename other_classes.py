@@ -1,66 +1,22 @@
 class UFMG:
     intro = 'serviços UFMG'
 
-    1.
-    Minha
-    UFMG
-    2.
-    Sistema
-    SEI - Blocos
-    de
-    Assinaturas
-    do
-    ambiente
-    SECMPS
-    3.
-    Sistema
-    SEI - Blocos
-    de
-    Assinaturas
-    do
-    ambiente
-    MPS
-    4.
-    Sistema
-    SEI - Consulta
-    de
-    processos(já
-    copiados) no
-    ambiente
-    SECMPS
-    5.
-    Sistema
-    SEI - Consulta
-    de
-    processos(já
-    copiados) no
-    ambiente
-    MPS
+    1. Minha UFMG
+    2. Sistema SEI - Blocos de Assinaturas do ambiente SECMPS
+    3. Sistema SEI - Blocos de Assinaturas do ambiente MPS
+    4. Sistema SEI - Consulta de processos (já copiados) no ambiente SECMPS
+    5. Sistema SEI - Consulta de processos (já copiados) no ambiente MPS
     pass
 
 
 class Classroom:
     intro = 'Diários de Classe e Moodle'
-    1.
-    PSP(MPS005) - Moodle
-    2.
-    PSP(MPS005) - Diário
-    de
-    Classe
-    3.
-    Didática(MPS906) - Moodle
-    4.
-    Didática(MPS906) - Diário
-    de
-    Classe
-    5.
-    Políticas
-    Mestrado(ENF908) - Moodle
-    6.
-    Políticas
-    Mestrado(ENF908) - Diário
-    de
-    Classe
+    1. PSP (MPS005) - Moodle
+    2. PSP (MPS005) - Diário de Classe
+    3. Didática (MPS906) - Moodle
+    4. Didática (MPS906) - Diário de Classe
+    5. Políticas Mestrado (ENF908) - Moodle
+    6. Políticas Mestrado (ENF908) - Diário de Classe
     pass
 
 
@@ -71,51 +27,28 @@ class Notion:
 
 class Pesquisas:
     intro = 'serviços de Pesquisa'
-    1.
-    Plataforma
-    Brasil
-    2.
-    Sucupira
-    3.
-    Alterações
-    Lattes
-    4.
-    Meu
-    Lattes
-    5.
-    Meu
-    Google
-    Scholar
-    6.
-    Z - Library
-    7.
-    ZoteroBib
-    8.
-    Sci - HUB
-    9.
-    Orcid
-    10.
-    Publons
-    11.
-    Research
-    Gate
+    1. Plataforma Brasil
+    2. Sucupira
+    3. Alterações Lattes
+    4. Meu Lattes
+    5. Meu Google Scholar
+    6. Z-Library
+    7. ZoteroBib
+    8. Sci-HUB
+    9. Orcid
+    10. Publons
+    11. Research Gate
     pass
 
 
 class Noticias:
     intro = 'serviços de Notícias'
-    1.
-    O
-    Globo
-    2.
-    Estadão
-    3.
-    Antagonista
-    4.
-    Crusoé
-    5.
-    Google
-    News
+    1. O Globo
+    2. Estadão
+    3. Antagonista
+    4. Crusoé
+    5. Google News
+
     pass
 
 
@@ -128,16 +61,33 @@ class Apps:
     pass
 
 
-Walling
-Teams
-Ofice
-365
-Speechnotes
-Youtube
-Music
+
+
+Youtube Music
+Spotify
 OneDrive
-Whimsical
+
 
 
 class DataScience:
     pass
+
+
+    maps = ['Maps', 'https://www.google.com/maps']
+    travel = ['Travel', 'https://www.google.com/travel/']
+    finances = ['Finanças', 'https://www.google.com/finance/']
+    images = ['Imagens', 'https://www.google.com/imghp?hl=pt-brgoogle.com']
+    forms = ['Forms', 'https://docs.google.com/forms/u/0/']
+
+    """
+    var0 =
+    var1 =
+    var2 =
+    var3 =
+    var4 =
+    var5 =
+    var6 =
+    var7 =
+    var8 =
+    var9 =
+    """
