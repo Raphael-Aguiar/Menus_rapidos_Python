@@ -1,37 +1,57 @@
-
-
 class Master:
+
+    def __init__(self):
+        self.user_option2 = None
 
     def menu(self):
         # Exibe o menu no terminal (print) com pacote better table
         # Pergunta a opção de site/aplicativo e recebe o input (X)
-        import main
         from prettytable import PrettyTable
 
         table = PrettyTable()
 
         table.field_names = ["Opção", "Serviço"]
-        table.add_row([0, self.var0[0]])
-        table.add_row([1, self.var1[0]])
-        table.add_row([2, self.var2[0]])
-        table.add_row([3, self.var3[0]])
-        table.add_row([4, self.var4[0]])
-        table.add_row([5, self.var5[0]])
-        table.add_row([6, self.var6[0]])
-        table.add_row([7, self.var7[0]])
-        table.add_row([8, self.var8[0]])
-        table.add_row([9, self.var9[0]])
+        table.add_row([1, self.var0[0]])
+        table.add_row([2, self.var1[0]])
+        table.add_row([3, self.var2[0]])
+        table.add_row([4, self.var3[0]])
+        table.add_row([5, self.var4[0]])
+        table.add_row([6, self.var5[0]])
+        table.add_row([7, self.var6[0]])
+        table.add_row([8, self.var7[0]])
+        table.add_row([9, self.var8[0]])
+        table.add_row([10, self.var9[0]])
 
+        print(self.intro)
         print(table)
-
+        self.user_option2 = input("Selecione o serviço de sua preferência:")
         pass
 
-    def trigger_site(self, x):
-        pass
+    def trigger_site(self, user_option2):
+        import pyautogui
+        import psutil
+        import os
+        import time
+
+        lista = [self.var0, self.var1, self.var2, self.var3, self.var4,
+                 self.var5, self.var6, self.var7, self.var8, self.var9]
+        sites = []
+
+        for item in lista:
+            sites.append(item[1])
+
+        if 'chrome.exe' not in (p.name() for p in psutil.process_iter()):
+            os.startfile('chrome.exe')
+            time.sleep(5)
+
+        pyautogui.hotkey('ctrl', 't')
+        time.sleep(0.5)
+        pyautogui.hotkey('alt', 'd')
+        pyautogui.write(lista[user_option2 - 1])
 
 
 class MainApps(Master):
-    intro = 'principais aplicativos usados'
+    intro = 'Principais aplicativos usados:'
     var0 = ['Whatsapp', 'https://web.whatsapp.com/']
     var1 = ['Todoist', 'https://beta.todoist.com/app/project/1249942567']
     var2 = ['Memed', 'https://memed.com.br/plataforma/#']
@@ -47,7 +67,7 @@ class MainApps(Master):
 
 
 class Google(Master):
-    intro = 'serviços google'
+    intro = 'Serviços google:'
     var0 = ['Gmail', 'https://gmail.com']
     var1 = ['Calendar', 'https://calendar.google.com/calendar']
     var2 = ['Youtube', 'https://youtube.com']

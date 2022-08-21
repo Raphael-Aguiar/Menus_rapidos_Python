@@ -1,4 +1,10 @@
-# RESULTADO DE TESTE:
+import psutil
+opened = 'chrome.exe' in (p.name() for p in psutil.process_iter())
+print(opened)
+
+
+"""
+ RESULTADO DE TESTE:
 # É possível instanciar uma classe dentro de uma função qualquer, ou mesmo
 # de um método seu próprio, e retornar essa instância
 
@@ -22,7 +28,8 @@ print(gaia.x)
 final = gaia.teste()
 print(final.x)
 
-"""
+
+
 # Teste para abrir o Windows Terminal e digitar o comando com parâmetro
 # ESSA PARTE NA VERDADE VAI FICAR PARA O AHK!
 
@@ -36,5 +43,4 @@ pyautogui.typewrite('python D:\\OneDrive\\Documentos\\Github\\Projects'
                     '\\Automation_Projects\\Menus_rapidos_Python\\teste_2.py 1')
 time.sleep(1)
 pyautogui.press('enter')
-
 """
