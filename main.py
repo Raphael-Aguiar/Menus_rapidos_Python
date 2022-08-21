@@ -8,7 +8,21 @@ def main_trigger(AHK!!!!!!!): A FUNÇÃO TERÁ UM PARÂMETRO CONFORME O ATALHO!
     # Enviar comando + argumento
 """
 
-def instanciator():
+class Start:
+
+    import sys
+    menu = sys.argv[1]
+    global menu
+
+    def instanciator(self):
+        if menu == 0:
+            from main_classes import MainApps
+            MainApps()
+        elif menu == 1:
+            from main_classes import Google
+            Google()
+        else:
+            print ("Erro: parâmetro passado incorretamente")
 
     # Instancia a classe escolhida de menu conforme o argumento repassado
     # ao se iniciar o programa
@@ -36,3 +50,4 @@ def main():
     pass
 
 main()
+"""

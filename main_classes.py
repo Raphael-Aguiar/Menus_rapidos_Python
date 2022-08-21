@@ -25,10 +25,9 @@ class Master:
         pass
 
 
-# Classes específicas:
-#   Executam os métodos adicionais da classe a partir da escolha
 
-class MainApps:
+
+class MainApps(Master):
     intro = 'principais aplicativos usados'
     var0 = ['Whatsapp', 'https://web.whatsapp.com/']
     var1 = ['Todoist', 'https://beta.todoist.com/app/project/1249942567']
@@ -44,7 +43,7 @@ class MainApps:
     pass
 
 
-class Google:
+class Google(Master):
     intro = 'serviços google'
     var0 = ['Gmail', 'https://gmail.com']
     var1 = ['Calendar', 'https://calendar.google.com/calendar']
