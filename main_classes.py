@@ -1,4 +1,3 @@
-# from main import classe
 
 
 class Master:
@@ -6,29 +5,29 @@ class Master:
     def menu(self):
         # Exibe o menu no terminal (print) com pacote better table
         # Pergunta a opção de site/aplicativo e recebe o input (X)
+        import main
         from prettytable import PrettyTable
 
         table = PrettyTable()
 
         table.field_names = ["Opção", "Serviço"]
-        table.add_row(classe.var0)
-        table.add_row(classe.var1)
-        table.add_row(classe.var2)
-        table.add_row(classe.var3)
-        table.add_row(classe.var4)
-        table.add_row(classe.var5)
-        table.add_row(classe.var6)
-        table.add_row(classe.var7)
-        table.add_row(classe.var8)
-        table.add_row(classe.var9)
+        table.add_row([0, self.var0[0]])
+        table.add_row([1, self.var1[0]])
+        table.add_row([2, self.var2[0]])
+        table.add_row([3, self.var3[0]])
+        table.add_row([4, self.var4[0]])
+        table.add_row([5, self.var5[0]])
+        table.add_row([6, self.var6[0]])
+        table.add_row([7, self.var7[0]])
+        table.add_row([8, self.var8[0]])
+        table.add_row([9, self.var9[0]])
 
         print(table)
 
-
-    def trigger_site(self, X):
         pass
 
-
+    def trigger_site(self, x):
+        pass
 
 
 class MainApps(Master):

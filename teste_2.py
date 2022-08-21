@@ -1,5 +1,15 @@
-import sys
-print(sys.argv[1])
+import time
+print('Agora')
+count = 0
+while count < 20:
+    time.sleep(0.5)
+    print('Meio segundo depois')
+
+
+
+#import sys
+#print(sys.argv[1])
+
 
 
 """
