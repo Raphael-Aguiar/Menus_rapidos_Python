@@ -1,5 +1,26 @@
+# RESULTADO DE TESTE:
+# É possível instanciar uma classe dentro de uma função qualquer, ou mesmo
+# de um método seu próprio, e retornar essa instância
+
+class Maker:
+
+    def __init__(self, x):
+        self.x = x
+
+    def teste(self):
+        terra = Maker(12)
+        return terra
 
 
+def barco(t):
+    x = Maker(t)
+    return x
+
+gaia = barco(13)
+print(gaia.x)
+
+final = gaia.teste()
+print(final.x)
 
 """
 # Teste para abrir o Windows Terminal e digitar o comando com parâmetro

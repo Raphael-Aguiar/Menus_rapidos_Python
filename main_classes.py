@@ -1,25 +1,29 @@
+# from main import classe
+
 
 class Master:
-
-    def __init__(self, intro, var0, var1, var2, var3, var4, var5, var6, var7,
-                 var8, var9):
-        self.intro = intro
-        self.var0 = var0
-        self.var1 = var1
-        self.var2 = var2
-        self.var3 = var3
-        self.var4 = var4
-        self.var5 = var5
-        self.var6 = var6
-        self.var7 = var7
-        self.var8 = var8
-        self.var9 = var9
-        pass
 
     def menu(self):
         # Exibe o menu no terminal (print) com pacote better table
         # Pergunta a opção de site/aplicativo e recebe o input (X)
-        pass
+        from prettytable import PrettyTable
+
+        table = PrettyTable()
+
+        table.field_names = ["Opção", "Serviço"]
+        table.add_row(classe.var0)
+        table.add_row(classe.var1)
+        table.add_row(classe.var2)
+        table.add_row(classe.var3)
+        table.add_row(classe.var4)
+        table.add_row(classe.var5)
+        table.add_row(classe.var6)
+        table.add_row(classe.var7)
+        table.add_row(classe.var8)
+        table.add_row(classe.var9)
+
+        print(table)
+
 
     def trigger_site(self, X):
         pass
