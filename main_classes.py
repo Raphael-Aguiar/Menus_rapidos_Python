@@ -1,12 +1,10 @@
 class Master:
 
-    def __init__(self):
-        self.user_option2 = None
-
     def menu(self):
         # Exibe o menu no terminal (print) com pacote better table
         # Pergunta a opção de site/aplicativo e recebe o input (X)
         from prettytable import PrettyTable
+        from colorama import Fore, Style
 
         table = PrettyTable()
 
@@ -22,16 +20,19 @@ class Master:
         table.add_row([9, self.var8[0]])
         table.add_row([10, self.var9[0]])
 
+        print(Fore.GREEN + Style.BRIGHT)
         print(self.intro)
         print(table)
-        self.user_option2 = input("Selecione o serviço de sua preferência:")
-        pass
 
-    def trigger_site(self, user_option2):
+    def trigger_site(self):
         import pyautogui
         import psutil
         import os
         import time
+
+        # ACRESCENTAR AHK AQUI PARA ACHAR E ATIVAR JANELA DO CHROME!
+
+        user_option2 = int(input("Selecione o serviço de sua preferência:"))
 
         lista = [self.var0, self.var1, self.var2, self.var3, self.var4,
                  self.var5, self.var6, self.var7, self.var8, self.var9]
@@ -48,6 +49,9 @@ class Master:
         time.sleep(0.5)
         pyautogui.hotkey('alt', 'd')
         pyautogui.write(lista[user_option2 - 1])
+
+
+
 
 
 class MainApps(Master):

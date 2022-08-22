@@ -30,6 +30,6 @@ if __name__ == '__main__':
     # ao se iniciar o programa
 
     classe.menu()
-    classe.trigger_site(1)
+    classe.trigger_site()
 
     # closing()
