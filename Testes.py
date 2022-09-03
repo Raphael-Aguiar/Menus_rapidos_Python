@@ -1,6 +1,3 @@
-import psutil
-opened = 'chrome.exe' in (p.name() for p in psutil.process_iter())
-print(opened)
 
 
 """

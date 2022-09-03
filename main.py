@@ -7,8 +7,8 @@ def main_trigger(AHK!!!!!!!): A FUNÇÃO TERÁ UM PARÂMETRO CONFORME O ATALHO!
 """
 
 
-# import sys
-# user_option = sys.argv[1]
+import sys
+user_option = sys.argv[1]
 
 class Start:
 
@@ -25,7 +25,8 @@ class Start:
 
 if __name__ == '__main__':
     x = Start()
-    classe = x.selector(0)  # Colocar "user_option" depois no lugar do 0
+    classe = x.selector(user_option)  # Colocar "user_option" depois no lugar
+    # do 0
     # Instancia a classe escolhida de menu conforme o argumento repassado
     # ao se iniciar o programa
 

@@ -2,7 +2,7 @@ class Master:
 
     def menu(self):
         # Exibe o menu no terminal (print) com pacote better table
-        # Pergunta a opção de site/aplicativo e recebe o input (X)
+        # Pergunta a opção de site/aplicativo.
         from prettytable import PrettyTable
         from colorama import Fore, Style
 
@@ -25,12 +25,13 @@ class Master:
         print(table)
 
     def trigger_site(self):
+        # Recebe o input e aciona o site
+        # Dependendo do site, também deixa o cursor pronto para digitação
         import pyautogui
+        import pygetwindow as gw
         import psutil
         import os
         import time
-
-        # ACRESCENTAR AHK AQUI PARA ACHAR E ATIVAR JANELA DO CHROME!
 
         user_option2 = int(input("Selecione o serviço de sua preferência:"))
 
@@ -45,12 +46,15 @@ class Master:
             os.startfile('chrome.exe')
             time.sleep(5)
 
+        win = gw.getWindowsWithTitle('Google Chrome')[0]
+        win.activate()
+        win.restore()
+
         pyautogui.hotkey('ctrl', 't')
         time.sleep(0.5)
         pyautogui.hotkey('alt', 'd')
-        pyautogui.write(lista[user_option2 - 1])
-
-
+        pyautogui.write(sites[user_option2 - 1])
+        pyautogui.press('enter')
 
 
 
