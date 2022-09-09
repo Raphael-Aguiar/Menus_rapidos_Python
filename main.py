@@ -6,15 +6,17 @@ def main_trigger(AHK!!!!!!!): A FUNÇÃO TERÁ UM PARÂMETRO CONFORME O ATALHO!
     # Enviar comando + argumento
 """
 
-
 import sys
-user_option = sys.argv[1]
+import main_classes
+
+user_option = int(sys.argv[1])
+
 
 class Start:
 
     @staticmethod
     def selector(menu):
-        import main_classes
+
         if menu == 0:
             return main_classes.MainApps()
         elif menu == 1:
